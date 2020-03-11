@@ -13,5 +13,15 @@ for i in range(1, 4):
 
 print("Scalar Multiplication: \n", 5 * m)
 
+#Transpose
+T = np.array([[0,0,0], [0,0,0], [0,0,0]])
+x = len(T)
+y = len(m)
+
+for i in range(y):
+    for j in range(x):
+        T[i][j] = m[j][i]
+
+print(T)
 
 
